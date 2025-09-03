@@ -1,0 +1,33 @@
+body {
+    background-color: #FFF5E1; /* Crema Pastel */
+    color: #5D4037; /* Marrón Oscuro */
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-brand, h1, h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+.hero-section {
+    background-color: #FFC0CB; /* Rosa Suave */
+    padding: 80px 0;
+}
+
+.btn-primary {
+    background-color: #8B4513; /* Chocolate */
+    border-color: #8B4513;
+}
+
+.card {
+    border: none;
+    background-color: #FFF5E1;
+}
+
+.card-img-top {
+    border-radius: 0.5rem;
+}
+
+footer {
+    background-color: #5D4037;
+    color: #FFF5E1;
+}

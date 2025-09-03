@@ -1,0 +1,92 @@
+:root {
+    --color-fondo-principal: #FFF5E1;
+    --color-acento-rosa: #FFC0CB;
+    --color-acento-chocolate: #8B4513;
+    --color-texto-principal: #5D4037;
+    --color-texto-secundario: #B0BEC5;
+}
+
+body {
+    background-color: var(--color-fondo-principal);
+    font-family: 'Lato', sans-serif;
+    color: var(--color-texto-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-family: 'Pacifico', cursive;
+    color: var(--color-acento-chocolate);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.texto-secundario {
+    font-size: 1.1em;
+    color: var(--color-texto-secundario);
+    margin-bottom: 25px;
+}
+
+.formulario .campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.formulario input:focus {
+    outline: none;
+    border-color: var(--color-acento-rosa);
+}
+
+.boton-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-acento-rosa);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-submit:hover {
+    background-color: var(--color-acento-chocolate);
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+    height: 1em;
+}
