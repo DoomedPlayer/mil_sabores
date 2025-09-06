@@ -1,0 +1,33 @@
+.form-container {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-container.active {
+    display: block;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-form a {
+    color: var(--color-acento-chocolate);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,210 @@
+:root {
+    --primary-bg: #FFF5E1;
+    --primary-color: #FFC0CB;
+    --secondary-color: #8B4513;
+    --main-text-color: #5D4037;
+    --secondary-text-color: #B0BEC5;
+    --white: #fff;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--primary-bg);
+    margin: 0;
+    padding: 0;
+    color: var(--main-text-color);
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.container-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+}
+
+/* --- Main Content Layout --- */
+.main-content {
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    padding: 0 2rem;
+}
+
+.profile-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-sidebar,
+.profile-main {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+}
+
+.profile-sidebar {
+    text-align: center;
+    flex: 1 1 300px; 
+}
+
+.profile-main {
+    flex: 1 1 600px; 
+}
+
+/* --- Profile Sidebar Elements --- */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.username-placeholder,
+.email-placeholder {
+    margin: 0;
+    color: var(--main-text-color);
+}
+
+.username-placeholder {
+    font-size: 1.5rem;
+}
+
+.email-placeholder {
+    color: var(--secondary-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.post-title {
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+/* --- Main Form Elements --- */
+.section-title {
+    font-family: 'Pacifico', cursive;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1 1 45%; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-check {
+    margin-bottom: 1rem;
+}
+
+.form-check input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.form-group label,
+.form-check label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: var(--main-text-color);
+    background-color: var(--primary-bg);
+}
+
+.form-group input:disabled,
+.form-group input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.form-text {
+    font-size: 0.875rem;
+    color: var(--secondary-text-color);
+    margin-top: 0.25rem;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px dashed var(--primary-color);
+    margin: 2rem 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}

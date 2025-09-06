@@ -1,14 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('registroForm');
+    const nombreInput = document.getElementById('nombre');
     const emailInput = document.getElementById('email');
     const fechaNacimientoInput = document.getElementById('fechaNacimiento');
     const passwordInput = document.getElementById('password');
     const codigoDescuentoInput = document.getElementById('codigoDescuento');
 
     form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
         let isValid = true;
 
         document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+
+        if (nombreInput.value.trim().split(' ').length < 2) {
+            showError(nombreInput, 'Por favor, ingresa tu nombre completo (nombre y apellido).');
+            isValid = false;
+        }
 
         if (emailInput.value.endsWith('@duocuc.cl')) {
             // No se necesitan validaciones adicionales aquí, se maneja en el backend
@@ -46,6 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!isValid) {
             event.preventDefault();
+        }
+        if (isValid) {
+            window.location.href = 'index.html';
         }
     });
 
