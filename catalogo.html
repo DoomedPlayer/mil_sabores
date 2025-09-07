@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Delicias</title>
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="test.html" class="logo-link">
+            <h1>Pastelería 1000 Sabores</h1>
+        </a>
+        <div class="cart-icon">
+            🛒 Carrito (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <main>
+                <aside class="sidebar">
+            <h2>Filtros</h2>
+            <div class="filter-group">
+                <h3>Tipo de Torta</h3>
+                <label><input type="checkbox" data-filter="cuadrada"> Cuadrada</label>
+                <label><input type="checkbox" data-filter="circular"> Circular</label>
+            </div>
+            <div class="filter-group">
+                <h3>Categorías</h3>
+                <ul id="category-list">
+                    <li><a href="#" data-category="Tortas Cuadradas">Tortas Cuadradas</a></li>
+                    <li><a href="#" data-category="Tortas Circulares">Tortas Circulares</a></li>
+                    <li><a href="#" data-category="Postres Individuales">Postres Individuales</a></li>
+                    <li><a href="#" data-category="Productos Sin Azúcar">Productos Sin Azúcar</a></li>
+                    <li><a href="#" data-category="Pastelería Tradicional">Pastelería Tradicional</a></li>
+                    <li><a href="#" data-category="Productos Sin Gluten">Productos sin Gluten</a></li>
+                    <li><a href="#" data-category="Productos Veganos">Productos Veganos</a></li>
+                    <li><a href="#" data-category="Tortas Especiales">Tortas Especiales</a></li>
+                </ul>
+            </div>
+            <button id="show-all-products" class="clear-filters-btn">Ver Todos los Productos</button>
+        </aside>
+
+        <section class="product-detail-modal" id="product-detail-modal">
+            <div class="product-detail-content">
+                <span class="close-button-detail">&times;</span>
+                <div id="product-detail-info">
+                    </div>
+            </div>
+        </section>
+
+        <section class="catalog" id="product-catalog">
+            </section>
+
+        <section class="cart-modal" id="cart-modal">
+            <div class="cart-content">
+                <span class="close-button">&times;</span>
+                <h2>Tu Carrito de Compras</h2>
+                <div id="cart-items">
+                    </div>
+                <div class="cart-summary">
+                    <h3>Total: <span id="cart-total">$0 CLP</span></h3>
+                </div>
+                <button class="checkout-button">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pastelería Delicias. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
