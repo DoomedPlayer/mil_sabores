@@ -1,6 +1,6 @@
 body {
-    background-color: #FFF5E1; /* Crema Pastel */
-    color: #5D4037; /* Marrón Oscuro */
+    background-color: #FFF5E1; 
+    color: #5D4037; 
     font-family: 'Lato', sans-serif;
 }
 
@@ -9,13 +9,16 @@ body {
 }
 
 .hero-section {
-    background-color: #FFC0CB; /* Rosa Suave */
+    background-color: #FFC0CB; 
     padding: 80px 0;
 }
 
 .btn-primary {
-    background-color: #8B4513; /* Chocolate */
+    background-color: #8B4513;
     border-color: #8B4513;
+}
+.btn-primary:hover{
+    background-color: #5D4037
 }
 .container-fluid{
     display: flex;
@@ -25,7 +28,7 @@ body {
 
 .card {
     border: none;
-    background-color: #FFF5E1;
+    background-color: #ffffff;
 }
 
 .card-img-top {
