@@ -1,0 +1,36 @@
+.pedido-box {
+    background-color: #fff;   /* fondo blanco */
+    padding: 20px;            /* espacio interno */
+    border-radius: 12px;      /* esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+    max-width: 600px;         /* ancho máximo */
+    text-align: center;       /* centrar texto dentro */
+}
+body {
+    background-color: #FFF5E1; 
+    color: #5D4037; 
+    font-family: 'Lato', sans-serif;
+}
+.navbar-brand, h1, h2 {
+    font-family: 'Pacifico', cursive;
+}
+main {
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    min-height: 50vh;       /* ocupa toda la pantalla */
+    flex-direction: column; 
+}
+
+#pedidoStatus {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 900px;
+    text-align: left;
+}
+.hero-section {
+    background-color: #FFC0CB; 
+    padding: 80px 0;
+}

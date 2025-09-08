@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras - Pastelería 1000 Sabores</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/perfil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="container-nav">
+      <a class="logo" href="catalogo.html">Pastelería Mil Sabores</a>
+      <div class="nav-links">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="perfil.html">Mi Perfil</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <h1>🛒 Tu Carrito</h1>
+
+    <div id="cart-modal" class="cart-modal">
+      <table id="tablaCarrito" style="width:100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+        </tbody>
+      </table>
+      <h3 id="cart-total" style="margin-top: 1rem; text-align:right;"></h3>
+    </div>
+  </main>
+
+  <script src="js/carrito.js"></script>
+
+    <main class="container py-5">
+        <h1 class="text-center mb-4">Gestiona tu Envío</h1>
+        <form id="envioForm">
+            <div class="campo">
+                <label for="direccion">Dirección de Envío:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Calle, Número, Ciudad" required>
+            </div>
+            <div class="campo">
+                <label for="metodoEnvio">Método de Envío:</label>
+                <select id="metodoEnvio" name="metodoEnvio" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="express">Express - 2 días</option>
+                    <option value="normal">Normal - 5 días</option>
+                </select>
+            </div>
+            <button type="submit" class="boton-submit">Confirmar Envío</button>
+        </form>
+        <div class="button-group">
+  <button class="btn btn-secondary" onclick="window.location.href='catalogo.html'">Seguir Comprando</button>
+  <button class="btn btn-primary" onclick="finalizarCompra()">Finalizar Compra</button>
+</div>
+<script>
+  function finalizarCompra() {
+    window.location.href = 'pagos.html';
+  }
+</script>
+
+    <script>
+        const envioForm = document.getElementById('envioForm');
+        envioForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const direccion = document.getElementById('direccion').value.trim();
+            const metodoEnvio = document.getElementById('metodoEnvio').value;
+
+            if(direccion && metodoEnvio){
+                localStorage.setItem('envio', JSON.stringify({ direccion, metodoEnvio }));
+                alert('Envío confirmado!');
+                window.location.href = 'procesamiento.html';
+            }
+        });
+    </script>
+</body>
+</html>

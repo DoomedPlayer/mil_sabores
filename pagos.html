@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago - Pastelería 1000 Sabores</title>
+
+  <!-- Importa los estilos existentes -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="stylesheet" href="css/perfil.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container-nav">
+      <a class="logo" href="index.html">Pastelería Mil Sabores</a>
+      <div class="nav-links">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="perfil.html">Mi Perfil</a>
+        <a href="carrito.html">Carrito</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <main>
+    <h1>💳 Pago de tu Pedido</h1>
+
+    <div class="pedido-box">
+      <form id="formPago">
+        <!-- Datos del comprador -->
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <!-- Métodos de pago -->
+        <div class="form-group">
+          <label for="tarjeta">Número de Tarjeta</label>
+          <input type="text" id="tarjeta" name="tarjeta" maxlength="16" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="exp">Expiración</label>
+            <input type="text" id="exp" name="exp" placeholder="MM/AA" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" maxlength="3" required>
+          </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="button-group">
+          <button type="button" class="btn btn-secondary" onclick="window.location.href='carrito.html'">Volver al Carrito</button>
+          <button type="submit" class="btn btn-primary">Pagar Ahora</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- JS para simular el pago -->
+  <script>
+    document.getElementById("formPago").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("✅ Pago realizado con éxito. ¡Gracias por tu compra! 🎂");
+      // Aquí puedes redirigir al seguimiento de pedido
+      window.location.href = "procesamiento.html";
+    });
+  </script>
+
+</body>
+</html>

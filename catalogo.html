@@ -12,16 +12,18 @@
 <body>
 
     <header>
-        <a href="test.html" class="logo-link">
-            <h1>Pastelería 1000 Sabores</h1>
-        </a>
-        <div class="cart-icon">
-            🛒 Carrito (<span id="cart-count">0</span>)
-        </div>
-    </header>
+  <a href="test.html" class="logo-link">
+    <h1>Pastelería 1000 Sabores</h1>
+  </a>
+  <nav class="header-right">
+    <div class="cart-icon">
+      🛒 Carrito (<span id="cart-count">0</span>)
+    </div>
+  </nav>
+</header>
 
     <main>
-                <aside class="sidebar">
+        <aside class="sidebar">
             <h2>Filtros</h2>
             <div class="filter-group">
                 <h3>Tipo de Torta</h3>
@@ -64,13 +66,13 @@
                 <div class="cart-summary">
                     <h3>Total: <span id="cart-total">$0 CLP</span></h3>
                 </div>
-                <button class="checkout-button">Finalizar Compra</button>
+                <button class="view-cart-button" onclick="window.location.href='carrito.html'">Finalizar Compra</button>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Pastelería Delicias. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Pastelería mil Sabores. Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/catalogo.js"></script>
