@@ -299,6 +299,24 @@ main {
     background-color: var(--color-acento-chocolate);
 }
 
+.social-icons {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; 
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+
+#product-detail-info .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

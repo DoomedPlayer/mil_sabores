@@ -111,6 +111,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="img/${product.image}" alt="${product.name}" width="300" height="250">
             <div class="info-section">
                 <h2>${product.name}</h2>
+                <div class="social-icons">
+                    <a href="#" class="share-btn facebook" target="_blank" title="Compartir en Facebook">
+                        <img src="img/facebook.png" alt="Compartir en Facebook">
+                    </a>
+                    <a href="#" class="share-btn twitter" target="_blank" title="Compartir en Twitter">
+                        <img src="img/twitter.png" alt="Compartir en Twitter">
+                    </a>
+                    <a href="#" class="share-btn whatsapp" target="_blank" title="Compartir por WhatsApp">
+                        <img src="img/whatsapp.png" alt="Compartir por WhatsApp">
+                    </a>
+                </div>
                 <p><strong>Categoría:</strong> ${product.category}</p>
                 <p><strong>Precio:</strong> $${product.price.toLocaleString('es-CL')} CLP</p>
                 <p>${product.description}</p>
@@ -121,6 +132,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="add-to-cart-detail" data-code="${product.code}">Añadir al Carrito</button>
             </div>
         `;
+        const productName = encodeURIComponent(product.name);
+        const productUrl = encodeURIComponent(window.location.href);
+        const productDescription = encodeURIComponent(product.description);
+        const hashtags = 'Pasteleria1000Sabores,PasteleriaArtesanal,Postres';
+
+        const facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${productUrl}&quote=¡Mira esta deliciosa ${productName} de Pastelería 1000 Sabores!`;
+        const twitterLink = `https://twitter.com/intent/tweet?url=${productUrl}&text=¡Me encanta esta ${productName} de Pastelería 1000 Sabores!&hashtags=${hashtags}`;
+        const whatsappLink = `https://api.whatsapp.com/send?text=¡Mira esta deliciosa ${productName} de Pastelería 1000 Sabores! Más detalles aquí: ${productUrl}`;
+
+        document.querySelector('.share-btn.facebook').href = facebookLink;
+        document.querySelector('.share-btn.twitter').href = twitterLink;
+        document.querySelector('.share-btn.whatsapp').href = whatsappLink;
+
         productDetailModal.style.display = 'flex';
     }
 
