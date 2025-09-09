@@ -1,134 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería 1000 Sabores - Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastelería 1000 Sabores - Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Pastelería 1000 Sabores</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="catalogo.html">Catálogo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Mi Perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Carrito de Compras</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="brand" href="#">Pastelería 1000 Sabores</a>
+        
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="login.html">Mi Perfil</a></li>
+          <li><a href="carrito.html">Carrito de Compras</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero-section text-center text-white">
-            <div class="container">
-                <h1 class="display-4">¡50 Años de Dulzura y Tradición!</h1>
-                <p class="lead">Renovamos nuestra experiencia de compra para celebrar nuestro aniversario y nuestra historia, desde el Récord Guinness de 1995.</p>
-                <a href="#featured-products" class="btn btn-primary btn-lg mt-3">Explora Nuestros Productos</a>
-            </div>
-        </section>
+  
+  <main>
+    
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>¡50 Años de Dulzura y Tradición!</h1>
+        <p>Renovamos nuestra experiencia de compra para celebrar nuestro aniversario y nuestra historia, desde el Récord Guinness de 1995.</p>
+        <a href="#featured-products" class="btn">Explora Nuestros Productos</a>
+      </div>
+    </section>
 
-        <section id="featured-products" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">Nuestros Productos Destacados</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-100">
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="img/chocolate.jpg" class="card-img-top" alt="Torta Cuadrada de Chocolate" width="300" height="250">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Torta Cuadrada de Chocolate</h5>
-                                <p class="card-text">$45.000 CLP</p>
-                                <a href="#" class="btn btn-primary">Añadir al Carrito</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="img/tiramisu.jpg" class="card-img-top" alt="Tiramisú" width="300" height="250">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Tiramisú Clásico</h5>
-                                <p class="card-text">$5.000 CLP</p>
-                                <a href="#" class="btn btn-primary">Añadir al Carrito</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm">
-                            <img src="img/manjar.jpg" class="card-img-top" alt="Torta Circular de Manjar" width="300" height="250">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Torta Circular de Manjar</h5>
-                                <p class="card-text">$42.000 CLP</p>
-                                <a href="#" class="btn btn-primary">Añadir al Carrito</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid">                    
-                    <div class="row">
-                        <div class="col">
-                            <a href="catalogo.html" class="btn btn-primary btn-lg mt-3">Ver más Productos</a>
-                        </div>
-                    </div>   
-
-                </div>      
-            </div>
-        </section>
-
-        <section class="promotions py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-4">Promociones Especiales</h2>
-                <div class="row justify-content-center g-4">
-                    <div class="col-md-6">
-                        <div class="card p-4 h-100">
-                            <h3>Descuento de por Vida</h3>
-                            <p>Regístrate con el código <strong>FELICES50</strong> y recibe un 10% de descuento de por vida.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card p-4 h-100">
-                            <h3>Descuento Especial</h3>
-                            <p>Usuarios mayores de 50 años reciben un 50% de descuento en todos los productos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="community-section py-5">
-            <div class="container text-center">
-                <h2>Nuestra Comunidad Dulce</h2>
-                <p>Descubre recetas, consejos de repostería de los estudiantes de Duoc, y cómo tus compras apoyan a la comunidad local.</p>
-                <a href="#" class="btn btn-primary mt-3">Visita Nuestro Blog</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2025 Pastelería 1000 Sabores. Todos los derechos reservados.</p>
+    
+    <section id="featured-products" class="products-section">
+      <h2>Nuestros Productos Destacados</h2>
+      <div class="products-grid">
+        <div class="card">
+          <img src="img/chocolate.jpg" alt="Torta Cuadrada de Chocolate" width="300" height="250">
+          <h3>Torta Cuadrada de Chocolate</h3>
+          <p class="price">$45.000 CLP</p>
+          <a href="#" class="btn">Añadir al Carrito</a>
         </div>
-    </footer>
+        <div class="card">
+          <img src="img/tiramisu.jpg" alt="Tiramisú" width="300" height="250">
+          <h3>Tiramisú Clásico</h3>
+          <p class="price">$5.000 CLP</p>
+          <a href="#" class="btn">Añadir al Carrito</a>
+        </div>
+        <div class="card">
+          <img src="img/manjar.jpg" alt="Torta Circular de Manjar" width="300" height="250">
+          <h3>Torta Circular de Manjar</h3>
+          <p class="price">$42.000 CLP</p>
+          <a href="#" class="btn">Añadir al Carrito</a>
+        </div>
+      </div>
+      
+      <div class="btn-center">
+        <a href="catalogo.html" class="btn">Ver más Productos</a>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <section class="promotions">
+      <h2>Promociones Especiales</h2>
+      <div class="promotions-grid">
+        <div class="promo-card">
+          <h3>Descuento de por Vida</h3>
+          <p>Regístrate con el código <strong>FELICES50</strong> y recibe un 10% de descuento de por vida.</p>
+        </div>
+        <div class="promo-card">
+          <h3>Descuento Especial</h3>
+          <p>Usuarios mayores de 50 años reciben un 50% de descuento en todos los productos.</p>
+        </div>
+      </div>
+    </section>
 
+    
+    <section class="community-section">
+      <h2>Nuestra Comunidad Dulce</h2>
+      <p>Descubre recetas, consejos de repostería de los estudiantes de Duoc, y cómo tus compras apoyan a la comunidad local.</p>
+      <a href="#" class="btn">Visita Nuestro Blog</a>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2025 Pastelería 1000 Sabores. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("nav-toggle");
+    const links = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => {
+      links.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
