@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (emailInput.value.endsWith('@duocuc.cl')) {
-            // No se necesitan validaciones adicionales aquí, se maneja en el backend
-            // La lógica de la torta gratis es un beneficio, no una validación de campo
+
         } else if (!emailInput.value.includes('@')) {
             showError(emailInput, 'Por favor, ingresa un correo electrónico válido.');
             isValid = false;
@@ -38,8 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showError(fechaNacimientoInput, 'Por favor, ingresa una fecha de nacimiento válida.');
             isValid = false;
         } else if (edad >= 50) {
-            // El descuento se aplica en el backend
-            // La validación solo verifica que sea un campo válido
+
         }
 
         if (passwordInput.value.length < 8) {

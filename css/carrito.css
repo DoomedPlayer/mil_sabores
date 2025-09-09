@@ -1,0 +1,132 @@
+:root {
+    --primary-bg: #FFF5E1;
+    --primary-color: #FFC0CB;
+    --secondary-color: #8B4513;
+    --main-text-color: #5D4037;
+    --secondary-text-color: #B0BEC5;
+    --white: #fff;
+    --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand, h1, h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--primary-bg);
+    margin: 0;
+    padding: 0;
+    color: var(--main-text-color);
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.container-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.purchase-details-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+
+    max-width: 500px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+.purchase-details-box h3 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.detail-item:last-of-type {
+    border-bottom: none;
+}
+
+.detail-item.total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 15px;
+    border-top: 1.5px solid #007bff;
+    padding-top: 15px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.campo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}

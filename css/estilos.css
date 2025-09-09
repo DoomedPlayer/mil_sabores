@@ -1,10 +1,10 @@
 .pedido-box {
-    background-color: #fff;   /* fondo blanco */
-    padding: 20px;            /* espacio interno */
-    border-radius: 12px;      /* esquinas redondeadas */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
-    max-width: 600px;         /* ancho máximo */
-    text-align: center;       /* centrar texto dentro */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+    text-align: center;
 }
 body {
     background-color: #FFF5E1; 
@@ -17,9 +17,9 @@ body {
 
 main {
     display: flex;
-    justify-content: center; /* centra horizontal */
-    align-items: center;     /* centra vertical */
-    min-height: 50vh;       /* ocupa toda la pantalla */
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
     flex-direction: column; 
 }
 

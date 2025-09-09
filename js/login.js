@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Select both forms
+
     const registroForm = document.getElementById('registroForm');
     const loginForm = document.getElementById('loginForm');
     
@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainTitle = document.querySelector('.titulo-principal');
     const subTitle = document.querySelector('.texto-secundario');
 
-    // Login form inputs
+
     const loginEmailInput = document.getElementById('loginEmail');
     const loginPasswordInput = document.getElementById('loginPassword');
 
-    // Function to show error messages
+
     function showError(input, message) {
         const parent = input.parentElement;
         const errorSpan = parent.querySelector('.error-message');
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Toggle forms logic
+
     showRegisterBtn.addEventListener('click', () => {
         loginFormContainer.classList.remove('active');
         registerFormContainer.classList.add('active');
