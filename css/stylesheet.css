@@ -11,39 +11,40 @@ h1, h2, .brand {
 }
 
 .navbar {
-  background-color: #FFF5E1;
+  background-color: #8B4513;
   padding: 1rem 2rem;
-  border-bottom: 2px solid #E0C097;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .brand {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
-  color: #5D4037;
+  color: #FFF5E1;
 }
 
 .nav-links {
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
+  display: flex;  
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #5D4037;
+  color: #FFF5E1;
   font-weight: bold;
   transition: color 0.3s;
+  margin-left: 1.5rem;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  color: #8B4513;
+  color: #FFF5E1;
 }
 
 .nav-toggle {
