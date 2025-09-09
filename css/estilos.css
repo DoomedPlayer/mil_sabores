@@ -14,6 +14,7 @@ body {
 .navbar-brand, h1, h2 {
     font-family: 'Pacifico', cursive;
 }
+
 main {
     display: flex;
     justify-content: center; /* centra horizontal */
