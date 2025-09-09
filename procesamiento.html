@@ -28,59 +28,76 @@
 
 <main>
     <div class="tracking-container">
-    <div class="titulo"> <h1>Seguimiento de compra</h1></div>
-    <ul class="progress-bar">
-        <li class="progress-step completed">
-            <div class="step-circle">
-                <i class="icono fas fa-clipboard-list"></i>
+         <div class="grid-container">
+            <div class="column-left">
+                <div class="pedido-box" style="margin-top: 2rem;">
+                    <h3 class="section-title">Información del Envío</h3>
+                    <p><strong>Dirección:</strong> Av. Principal 123, Santiago</p>
+                    <p><strong>Método de Envío:</strong> Envío Estándar</p>
+                    <p><strong>Estado:</strong> En preparación</p>
+                </div>
+                <div class="pedido-box" style="margin-top: 2rem;">
+                    <h3 class="section-title">Detalle de los Productos</h3>
+                    <div class="producto-item" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px dashed var(--secondary-text-color);">
+                        <div style="flex-grow: 1;">
+                            <span style="font-weight: bold; color: var(--main-text-color);">Torta de Chocolate</span>
+                            <p style="color: var(--secondary-text-color); margin: 0.25rem 0;">Cantidad: 2</p>
+                        </div>
+                        <span style="font-weight: bold; color: var(--secondary-color);">$30.000</span>
+                    </div>
+                    <div style="text-align: right; font-size: 1.25rem; font-weight: bold; margin-top: 1rem; color: var(--secondary-color);">
+                        Total: $60.000
+                    </div>
+                </div>
             </div>
-            <div class="step-details">
-                <span class="step-text">Recibimos tu pedido</span>
-                <span class="step-date">21/05/ 20:01</span>
+
+            <div class="column-right">
+                <div class="titulo"> <h1>Seguimiento de compra</h1></div>
+                    <ul class="progress-bar">
+                        <li class="progress-step completed">
+                            <div class="step-circle">
+                                <i class="icono fas fa-clipboard-list"></i>
+                            </div>
+                            <div class="step-details">
+                                <span class="step-text">Recibimos tu pedido</span>
+                                <span class="step-date">21/05/ 20:01</span>
+                            </div>
+                        </li>
+                        <li class="progress-step completado">
+                            <div class="step-circle">
+                                <i class="icono fas fa-check"></i>
+                            </div>
+                            <div class="step-details">
+                                <span class="step-text">Pedido confirmado</span>
+                                <span class="step-date">21/05/ 20:51</span>
+                            </div>
+                        </li>
+                        <li class="progress-step active">
+                            <div class="step-circle">
+                                <i class="icono fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="step-details">
+                                <span class="step-text">¡Tu pedido está listo!</span>
+                                <span class="step-date">00/00/ 00:00</span>
+                            </div>
+                        </li>
+                        <li class="progress-step">
+                            <div class="step-circle">
+                                <i class="icono fas fa-truck"></i>
+                            </div>
+                            <div class="step-details">
+                                <span class="step-text">Pedido entregado</span>
+                                <span class="step-date">00/00/ 00:00</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="fecha-estimada">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Recibe el 24 de mayo</span>
+                    </div>
+                </div>
             </div>
-        </li>
-        <li class="progress-step completado">
-            <div class="step-circle">
-                <i class="icono fas fa-check"></i>
-            </div>
-            <div class="step-details">
-                <span class="step-text">Pedido confirmado</span>
-                <span class="step-date">21/05/ 20:51</span>
-            </div>
-        </li>
-        <li class="progress-step active">
-            <div class="step-circle">
-                <i class="icono fas fa-shopping-bag"></i>
-            </div>
-            <div class="step-details">
-                <span class="step-text">¡Tu pedido está listo!</span>
-                <span class="step-date">21/05/ 20:51</span>
-            </div>
-        </li>
-        <li class="progress-step">
-            <div class="step-circle">
-                <i class="icono fas fa-truck"></i>
-            </div>
-            <div class="step-details">
-                <span class="step-text">Pedido entregado</span>
-                <span class="step-date">25/05/ 19:37</span>
-            </div>
-        </li>
-    </ul>
-    <div class="fecha-estimada">
-        <i class="fas fa-calendar-alt"></i>
-        <span>Recibe el 24 de mayo</span>
-    </div>
-</div>
-<div class="pedido-box" style="margin-top: 2rem;">
-        <h3 class="section-title">Información del Envío</h3>
-        <div id="pedidoStatus"></div>
-    </div>
-    
-    <div class="pedido-box" style="margin-top: 2rem;">
-        <h3 class="section-title">Detalle de los Productos</h3>
-        <div id="productos-detalle"></div>
-    </div>
+        </div> 
 </main>
 
 </body>
