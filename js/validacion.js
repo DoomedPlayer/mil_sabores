@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
         }
         if (isValid) {
-            window.location.href = 'index.html';
+            window.location.href = 'test.html';
         }
     });
 
