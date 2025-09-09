@@ -11,10 +11,13 @@
 .logo-link {
     text-decoration: none; 
     color: inherit; 
+    font-size: 1.8rem;
+    font-weight: normal;
 }
 
-.navbar-brand, h1, h2 {
+.logo-link, h1, h2 {
     font-family: 'Pacifico', cursive;
+    padding: 0;
 }
 
 body {
@@ -27,7 +30,7 @@ body {
 
 .navbar {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--primary-bg);
     padding: 1rem 0;
 }
 

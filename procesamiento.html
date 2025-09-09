@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguimiento de Pedido - Pastelería 1000 Sabores</title>
-    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/proceso.css">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     
   <div class="navbar">
     <div class="container-nav">
-      <a href="test.html" class="logo-link"><h1>Pastelería 1000 Sabores</h1></a> 
+      <a class="logo-link" href="test.html">Pastelería 1000 Sabores</a>
         <div class="nav-links">
             <a href=test.html>Inicio</a>
             <a href="catalogo.html">Catalogo</a>
@@ -25,25 +26,62 @@
   </div>
 
 
-<main class="container py-5">
-    <h1 class="text-center mb-4">Estado de tu Pedido</h1>
-    <div id="pedidoStatus" class="pedido-box mx-auto">
+<main>
+    <div class="tracking-container">
+    <div class="titulo"> <h1>Seguimiento de compra</h1></div>
+    <ul class="progress-bar">
+        <li class="progress-step completed">
+            <div class="step-circle">
+                <i class="icono fas fa-clipboard-list"></i>
+            </div>
+            <div class="step-details">
+                <span class="step-text">Recibimos tu pedido</span>
+                <span class="step-date">21/05/ 20:01</span>
+            </div>
+        </li>
+        <li class="progress-step completado">
+            <div class="step-circle">
+                <i class="icono fas fa-check"></i>
+            </div>
+            <div class="step-details">
+                <span class="step-text">Pedido confirmado</span>
+                <span class="step-date">21/05/ 20:51</span>
+            </div>
+        </li>
+        <li class="progress-step active">
+            <div class="step-circle">
+                <i class="icono fas fa-shopping-bag"></i>
+            </div>
+            <div class="step-details">
+                <span class="step-text">¡Tu pedido está listo!</span>
+                <span class="step-date">21/05/ 20:51</span>
+            </div>
+        </li>
+        <li class="progress-step">
+            <div class="step-circle">
+                <i class="icono fas fa-truck"></i>
+            </div>
+            <div class="step-details">
+                <span class="step-text">Pedido entregado</span>
+                <span class="step-date">25/05/ 19:37</span>
+            </div>
+        </li>
+    </ul>
+    <div class="fecha-estimada">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Recibe el 24 de mayo</span>
+    </div>
+</div>
+<div class="pedido-box" style="margin-top: 2rem;">
+        <h3 class="section-title">Información del Envío</h3>
+        <div id="pedidoStatus"></div>
+    </div>
+    
+    <div class="pedido-box" style="margin-top: 2rem;">
+        <h3 class="section-title">Detalle de los Productos</h3>
+        <div id="productos-detalle"></div>
     </div>
 </main>
 
-
-    <script>
-        const pedidoStatus = document.getElementById('pedidoStatus');
-        const envio = JSON.parse(localStorage.getItem('envio'));
-        if(envio){
-            pedidoStatus.innerHTML = `
-                <p><strong>Dirección:</strong> ${envio.direccion}</p>
-                <p><strong>Método de Envío:</strong> ${envio.metodoEnvio}</p>
-                <p><strong>Estado:</strong> En preparación 🍰</p>
-            `;
-        } else {
-            pedidoStatus.innerHTML = `<p>No hay pedidos activos. Ve al <a href="catalogo.html">catálogo</a> para comprar.</p>`;
-        }
-    </script>
 </body>
 </html>
