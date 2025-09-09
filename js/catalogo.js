@@ -35,12 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let cart = [];
 
-    const storedCart = localStorage.getItem('cartItems');
-    if (storedCart) {
-        cart = JSON.parse(storedCart);
-        updateCart();
-    }
-
     function renderProducts(filteredProducts = products) {
         catalog.innerHTML = '';
         filteredProducts.forEach(product => {
@@ -170,7 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cart.push({ ...product, quantity: 1 });
         }
         updateCart();
-        localStorage.setItem('cartItems', JSON.stringify(cart));
     }
 
     cartIcon.addEventListener('click', () => {
