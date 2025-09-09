@@ -6,12 +6,10 @@ body {
   padding: 0;
 }
 
-/* Títulos */
 h1, h2, .brand {
   font-family: 'Pacifico', cursive;
 }
 
-/* NAVBAR */
 .navbar {
   background-color: #FFF5E1;
   padding: 1rem 2rem;
@@ -48,7 +46,6 @@ h1, h2, .brand {
   color: #8B4513;
 }
 
-/* Responsive nav */
 .nav-toggle {
   display: none;
   font-size: 1.8rem;
@@ -104,6 +101,10 @@ h1, h2, .brand {
   background-color: #5D4037;
 }
 
+.btn-center{
+  padding: 2rem;
+}
+
 .products-section {
   padding: 3rem 1rem;
   text-align: center;
@@ -128,9 +129,11 @@ h1, h2, .brand {
 
 .card img {
   border-radius: 0.5rem;
-  width: 25%;
-  height: auto;
+  width: 200;
+  height: 250;
   margin-bottom: 2rem;
+  object-fit: cover;
+
 }
 
 .price {
