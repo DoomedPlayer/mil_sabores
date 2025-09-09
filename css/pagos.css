@@ -56,7 +56,7 @@ body {
 }
 
 .main-content {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 2.5rem auto;
     padding: 0 2rem;
 }
@@ -67,15 +67,15 @@ body {
     flex-wrap: wrap;
 }
 
-.profile-main {
+.pedido-box {
     background-color: var(--white);
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
     padding: 2rem;
 }
 
-.profile-main {
-    flex: 1 1 600px; 
+.pedido-box {
+    flex: 2 2 600px; 
 }
 
 .username-placeholder,
@@ -103,7 +103,7 @@ body {
     font-family: 'Pacifico', cursive;
     color: var(--secondary-color);
     font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     margin-top: 0;
 }
 
@@ -120,16 +120,8 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.form-check {
-    margin-bottom: 1rem;
-}
 
-.form-check input[type="checkbox"] {
-    margin-right: 0.5rem;
-}
-
-.form-group label,
-.form-check label {
+.form-group label {
     font-weight: bold;
     margin-bottom: 0.5rem;
     color: var(--secondary-color);
