@@ -58,12 +58,10 @@ body {
     font-weight: bold;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+.main-content {
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    padding: 0 2rem;
 }
 
 .profile-container {
